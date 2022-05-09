@@ -12,19 +12,19 @@ namespace ManejoDeEstuantesBootcamp.Entities
         public string SubjectCode { get; set; }
         public string GetQualificationLetter()
         {
-            if (90 >= Qualification && 100 <= Qualification)
+            if (Qualification >= 90 && Qualification <= 100)
             {
                 return "A";
             }
-            else if (80 >= Qualification && 89 <= Qualification)
+            else if (Qualification >= 80 && Qualification <= 89)
             {
                 return "B";
             }
-            else if (70 >= Qualification && 79 <= Qualification)
+            else if (Qualification >= 70 && Qualification <= 79)
             {
                 return "C";
             }
-            else if (41 >= Qualification && 69 <= Qualification)
+            else if (Qualification >= 41 && Qualification <= 69)
             {
                 return "D";
             }
